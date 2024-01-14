@@ -20,3 +20,14 @@
   height: 65px;
   z-index: -10;
 }
+
+@media (max-width: 800px) {
+  .titles-with-squares {
+    @apply font-serif font-bold text-xl relative z-10 ps-3;
+  }
+  .titles-with-squares::before {
+    left: 16.25px;
+    width: 40px;
+    height: 40px;
+  }
+}

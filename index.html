@@ -11,21 +11,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
   </head>
   <body>
-    <header class="absolute top-0 w-full px-20 py-[3.75rem]">
+    <header class="absolute top-0 w-full px-20 max-520:px-10 py-[3.75rem]">
       <nav class="flex justify-between items-center">
         <h2 class="text-2xl font-serif italic font-bold">Ana Cardozo.</h2>
 
         <ul class="flex gap-16">
-          <li>
+          <li class="max-1366:hidden">
             <a class="text-pink text-sm">INICIO</a>
           </li>
-          <li>
+          <li class="max-1366:hidden">
             <a class="text-pink text-sm">SOBRE MI</a>
           </li>
-          <li>
+          <li class="max-1366:hidden">
             <a class="text-pink text-sm">CURSOS</a>
           </li>
-          <li>
+          <li class="max-1366:hidden">
             <a class="text-pink text-sm">CONTÁCTAME</a>
           </li>
           <li class="flex justify-center items-center">
@@ -38,17 +38,17 @@
     </header>
 
     <section class="w-full h-dvh diagonal-separator flex">
-      <div class="flex-1 relative ps-20">
+      <div class="flex-1 relative ps-20 max-800:hidden">
         <div class="w-[324px] h-[486px] absolute top-[125px] left-[60px] z-10">
           <img src="./4.jpg" />
         </div>
-        <div class="w-[350px] h-[523px] absolute z-0 bottom-0 right-[10px]">
+        <div class="w-[350px] h-[523px] absolute z-0 bottom-0 right-[10px] max-1280:hidden">
           <img src="./2.jpg" />
         </div>
       </div>
-      <div class="flex-1 flex justify-center flex-col ps-40 gap-20 pt-32">
+      <div class="flex-1 flex justify-center flex-col 800:ps-40 max-800:ps-20 max-1366:pe-20 max-520:px-10 gap-20 pt-32">
         <div class="flex flex-col max-w-lg gap-6">
-          <h1 class="text-[5em] font-serif font-bold leading-serif">Hipnosis Consciente</h1>
+          <h1 class="text-[5em] font-serif font-bold leading-serif max-1366:text-[4em]">Hipnosis Consciente</h1>
           <p class="text-sm leading-sans">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
         </div>
         
@@ -62,7 +62,7 @@
       </div>
     </section>
     
-    <section class="w-full h-dvh flex">
+    <section class="w-full 1024:h-dvh flex max-1024:flex-col max-1024:items-center max-1024:p-10 max-1024:gap-5">
       <div class="flex-1 flex flex-col items-center justify-center">
         <div class="max-w-lg w-full">
           <h2 class="text-[2.75em] font-serif font-bold mb-8">Lorem ipsum dolor sit</h2>
@@ -85,14 +85,14 @@
         </div>
       </div>
 
-      <div class="bg-slate-200">
-        <img src="./1.jpg" />
+      <div>
+        <img src="./1.jpg" class="max-1024:max-w-lg max-800:w-full max-1024:rounded-2xl" />
       </div>
     </section>
 
-    <section class="w-full h-dvh px-20 flex justify-center items-center bg-light-pink">
-      <div class="grid grid-cols-3 grid-rows-2 gap-12">
-        <div class="col-span-3 max-w-lg">
+    <section class="w-full 1280:h-dvh px-20 max-1280:py-20 flex justify-center items-center bg-light-pink">
+      <div class="grid 1024:grid-cols-3 1024:grid-rows-2 max-1024:grid-rows-4 max-1024:grid-cols-1 gap-12 max-1024:max-w-lg">
+        <div class="1024:col-span-3 max-w-lg">
           <h2 class="leading-serif text-[2.75em] font-serif font-bold">Lorem ipsum dolor sit</h2>
           <p class="leading-sans">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p>
         </div>
@@ -135,8 +135,8 @@
       </div>
     </section>
 
-    <section class="w-full h-dvh px-20 bg-light-pink">
-      <div class="flex gap-20 h-full">
+    <section class="w-full 1280:h-dvh 1024:px-20 max-1024:px-10 bg-light-pink max-1024:py-20">
+      <div class="flex max-1024:flex-col gap-20 h-full">
         <div class="flex-1 flex flex-col items-center justify-center">
           <div class="max-w-lg w-full">
             <h2 class="text-[2.75em] font-serif font-bold mb-8">Lorem ipsum dolor sit</h2>
@@ -160,16 +160,16 @@
         </div>
 
         <div class="flex-1 flex items-center justify-center">
-          <div class="max-w-lg">
+          <div class="max-w-lg w-full">
             <div class="slider-1">
               <div class="bg-white p-10 flex">
                 <h4 class="titles-with-squares before:bg-light-pink">Nombre del evento</h4>
-                <p class="leading-sans mt-5">
+                <p class="leading-sans mt-5 max-800:text-sm">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
                 </p>
                 <div class="text-pink mt-10">
                   <span>12 DE DICIEMBRE 2023</span>
-                  <a class="text-pink flex items-center gap-4 text-sm font-light mt-6">
+                  <a class="text-pink flex items-center gap-4 text-sm max-xl:text-xs font-light mt-6">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="1" viewBox="0 0 30 1">
                       <line id="Línea_1" data-name="Línea 1" x1="30" transform="translate(0 0.5)" fill="none" stroke="#b76e77" stroke-width="1"/>
                     </svg>
@@ -180,12 +180,12 @@
               </div>
               <div class="bg-white p-10 flex">
                 <h4 class="titles-with-squares before:bg-light-pink">Nombre del evento</h4>
-                <p class="leading-sans mt-5">
+                <p class="leading-sans mt-5 max-800:text-sm">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
                 </p>
                 <div class="text-pink mt-10">
                   <span>12 DE DICIEMBRE 2023</span>
-                  <a class="text-pink flex items-center gap-4 text-sm font-light mt-6">
+                  <a class="text-pink flex items-center gap-4 text-sm max-xl:text-xs font-light mt-6">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="1" viewBox="0 0 30 1">
                       <line id="Línea_1" data-name="Línea 1" x1="30" transform="translate(0 0.5)" fill="none" stroke="#b76e77" stroke-width="1"/>
                     </svg>
@@ -196,12 +196,12 @@
               </div>
               <div class="bg-white p-10 flex">
                 <h4 class="titles-with-squares before:bg-light-pink">Nombre del evento</h4>
-                <p class="leading-sans mt-5">
+                <p class="leading-sans mt-5 max-800:text-sm">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
                 </p>
                 <div class="text-pink mt-10">
                   <span>12 DE DICIEMBRE 2023</span>
-                  <a class="text-pink flex items-center gap-4 text-sm font-light mt-6">
+                  <a class="text-pink flex items-center gap-4 text-sm max-xl:text-xs font-light mt-6">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="1" viewBox="0 0 30 1">
                       <line id="Línea_1" data-name="Línea 1" x1="30" transform="translate(0 0.5)" fill="none" stroke="#b76e77" stroke-width="1"/>
                     </svg>
