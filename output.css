@@ -894,12 +894,29 @@ video {
   width: 100%;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.flex-\[2\] {
+  flex: 2;
+}
+
+.flex-\[3\] {
+  flex: 3;
+}
+
+.flex-\[4\] {
+  flex: 4;
 }
 
 .flex-shrink {
